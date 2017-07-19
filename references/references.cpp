@@ -13,9 +13,13 @@ int main()
 	std::cout << "ref1 is at address: " << std::hex << &ref1 << std::endl;
 
 	int& ref2 = ref1;
+
+	ref2 = 1111;
 	std::cout << "ref2 is at address: " << std::hex << &ref2 << std::endl;
 	std::cout << "Ref2 = " << std::dec << ref2 << std::endl;
+	std::cout << "original = " << original << std::endl;
 
+	system("pause");
     return 0;
 }
 
